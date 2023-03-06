@@ -1,2 +1,2 @@
-# gift-careers-cebsite
+# gift-careers-website
 A careers website for gift
