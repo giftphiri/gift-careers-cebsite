@@ -10,17 +10,25 @@
     height: 360px;
     width: 100%;
     object-fit: cover;
+    margin-bottom:16px;
   }
 </style>
   </head>
   <body>
+    {% include 'nav.html'%}
+    <img class="img-fluid" id="banner" src="https://gift-careers-website.giftphiri.repl.co/static/banner.jpg">
     <div class="container">
       <h1 class="text-center mt-2 mb-4">Gift Careers</h1>
-      <img class="img-fluid" id="banner" src="https://gift-careers-website.giftphiri.repl.co/static/banner.jpg">
-      <h2 class="text-center mt-2 mb-4">About Gift</h2>
+      <div class="row" style="margin-bottom:16px;">
+        <div class="col-md-6">
       <p class="lead">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim neque volutpat ac tincidunt vitae semper. Proin nibh nisl condimentum id. Commodo viverra maecenas accumsan lacus vel. Duis tristique sollicitudin nibh sit amet commodo nulla facilisi nullam. At urna condimentum mattis pellentesque id. Id interdum velit laoreet id donec ultrices tincidunt arcu. Tincidunt dui ut ornare lectus sit amet est. Imperdiet dui accumsan sit amet nulla facilisi morbi tempus. Adipiscing enim eu turpis egestas pretium aenean pharetra.
       </p>
+        </div>
+        <div class="col-6">
+        <img src="/static/people.jpg" style="height:320px; border-radius:4px;"
+          </div>
+      </div>
       <h2 class="text-center mt-2 mb-4">Open Positions</h2>
       <div>
         {%for job in jobs %}
@@ -29,8 +37,8 @@
       </div>
       <div class="text-center">
       <button class="btn btn-primary btn-lg">Contact Us</button>
-        <p class="mt-4">Copyright 2023, Gift.</p>
       </div>
     </div>
+    {% include 'footer.html'%}
   </body>
 </html>
